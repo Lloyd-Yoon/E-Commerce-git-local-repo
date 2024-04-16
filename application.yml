@@ -1,0 +1,6 @@
+token:
+  expiration_time: 864000000
+  secret: changed_#3_anpplication_yml_native_secret_default_12345678901234567890123456789012345678901234567890
+
+gateway: 
+  ip: 127.0.0.1
