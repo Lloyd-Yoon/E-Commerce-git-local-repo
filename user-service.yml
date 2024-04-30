@@ -5,5 +5,12 @@ spring:
     # 대칭키
     # password: '{cipher}35edcb5912d52b47946a2995cf66f06da22fb4642fb7a3ec6a7cee3a5e19dcf7'
     # 비대칭키
-    password: '{cipher}AYB5rzhZ+9NG+GxrfX6NvzOz37QT4RQARjZqovrs85rdI00MkbVYnoMyKlZMHMrK4bnZcsi+jPKPlD06476hJPCiU6XLO89ldhhflrqcTFwrYeQBH8fT4u/NXOyLW/necPAz4QFeELegaJeeuPqQYqhui52om83muFjlaCBxY7JuhxUdpoo+f5t52Wr331z4bpkkrzuTuWr/lS8Uo+cZR41t7NvEBEaHpS5YmBWKic5AP7zmR2h7uHSHISK9l3XyGZV9Yb6gZQJGJi6zHlU6cMmaKjKymASErI9E3fb4zlHCxsC5lUen3pJcBSK6HCD8n05kY3TCFWUvX+N9zkvl6fmYpvQDbm3x3fq/2cf+fxoo17RQfdNdDdNKurUBc+XV83E8VdySgrWETEWDLO5vfhlncrLB1+R3kyWWfdsEYRgA4N2YeNAVeUA7NVbg/6png9vGIPw1KDWd5bA60auBVy4qEjlrjxZfsklZ0FEhT7YvUS3dmNYfy4EdXxQS42DIMSeX+/IA7t0kJg3mc4pNEd11e7oFiuj1TP6esPDbz5e1hw=='
+    password: '{cipher}AYCsJ3G7v6wo/kM/buFDLSa0c7KAN1rQ+khCBAkP0fSp22eGIA/hZt3+RB+6C6nF8Gh+9pk4HRlIBcaVB3jS2Li7HlWe7J+ejh67EeE0WqzRajpUICoMeOIs2wvcznmZJ4ntkP7wLnWDeQmfxX7h7/H3hqJjvZwXgGCzOr6dF+3CosEQVdqPCXxRfe+EtOk8pMyR9txTv6KvaFN384AA15VXZFrPFh5ZRoD1hzUc76OGz8y68dJL9OUquR78lIKh7FZzGOdP4vjjw2jYH57OfRUaWvUC8MCSUE4CyzUl630Pt13h5uCKIYf51Xfy7YOLR5ltOEh3O6Kljuu493VIuwmyQHVLPzs4oP0zWG5ZfjoGJOlpB55Y6OFh0pn8VvMWghZjxKmFePHK8RT//NFIR47Io6Ix8KOjiRkMyd4eC8yFXLR5KacdJxyMMclPqnE9sLs0Q9AyMiMAPWFT1WCBa5lzio0lrEnDDQedgaga4M77wbAQmbQKKKOQBqKSww59hgj+QCOtawWccWKDPLgUvMZJcHdaRK3/yW/1hRD5HFBe+A=='
     driver-class-name: com.mysql.cj.jdbc.Driver
+
+order_service:
+  # url: http://127.0.0.1:8000/order-service/%s/orders
+  # main에 @LoadBalced  추가해야 사용가능 (Euraka에 등록된 서비스명)
+  url: http://ORDER-SERVICE/order-service/%s/orders
+  exception:
+    orders_is_empty: User's orders is empty.
