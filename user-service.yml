@@ -8,7 +8,7 @@ spring:
     password: '{cipher}AYCsJ3G7v6wo/kM/buFDLSa0c7KAN1rQ+khCBAkP0fSp22eGIA/hZt3+RB+6C6nF8Gh+9pk4HRlIBcaVB3jS2Li7HlWe7J+ejh67EeE0WqzRajpUICoMeOIs2wvcznmZJ4ntkP7wLnWDeQmfxX7h7/H3hqJjvZwXgGCzOr6dF+3CosEQVdqPCXxRfe+EtOk8pMyR9txTv6KvaFN384AA15VXZFrPFh5ZRoD1hzUc76OGz8y68dJL9OUquR78lIKh7FZzGOdP4vjjw2jYH57OfRUaWvUC8MCSUE4CyzUl630Pt13h5uCKIYf51Xfy7YOLR5ltOEh3O6Kljuu493VIuwmyQHVLPzs4oP0zWG5ZfjoGJOlpB55Y6OFh0pn8VvMWghZjxKmFePHK8RT//NFIR47Io6Ix8KOjiRkMyd4eC8yFXLR5KacdJxyMMclPqnE9sLs0Q9AyMiMAPWFT1WCBa5lzio0lrEnDDQedgaga4M77wbAQmbQKKKOQBqKSww59hgj+QCOtawWccWKDPLgUvMZJcHdaRK3/yW/1hRD5HFBe+A=='
     driver-class-name: com.mysql.cj.jdbc.Driver
 gateway:
-  ip: 172.18.0.5
+  ip: 172.18.0.1
 
 order_service:
   # url: http://127.0.0.1:8000/order-service/%s/orders
